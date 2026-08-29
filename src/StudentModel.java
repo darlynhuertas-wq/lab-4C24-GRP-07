@@ -45,4 +45,14 @@ public class StudentModel {
     public void setPromedio(double promedio) {
         this.promedio = promedio;
     }
+    
+    @Override
+    public String toString() {
+        return "StudentModel{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", promedio=" + promedio +
+                '}';
+    }
 }
