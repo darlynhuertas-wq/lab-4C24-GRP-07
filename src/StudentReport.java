@@ -10,4 +10,8 @@ public class StudentReport {
         reporte.append("Estado: ").append(estudiante.getPromedio() >= 13 ? "Aprobado" : "Desaprobado");
         return reporte.toString();
     }
+    
+    public String generarReporteCorto(StudentModel estudiante) {
+        return estudiante.getNombre() + " " + estudiante.getApellido() + " - Promedio: " + estudiante.getPromedio();
+    }
 }
