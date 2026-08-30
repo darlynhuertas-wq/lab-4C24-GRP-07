@@ -62,4 +62,16 @@ public class StudentController {
        	 	System.out.println("Final update in sprint-1");
    	 }
     }
+ 
+
+    public void controller(){
+        System.out.println("Iniciando el controlador de estudiantes...");
+        registrarEstudiante("Juan Perez", 1);
+    }
+
+    public void registrarEstudiante(String nombre, int id){
+        System.out.println("Estudiante registrado: " + nombre + " - ID: " + id);
+    }
+
+
 }
